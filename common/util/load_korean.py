@@ -67,7 +67,7 @@ class DataHandler():
             for target in target_record:
                 self.delete_data(target)
 
-            for i in range(0,len(target_record)):
+            for i in range(0, len(target_record)):
                 if record.name == target_record[i].name:
                     if record.applicant == target_record[i].applicant:
                         print(target_record[i].applicant)
@@ -78,7 +78,7 @@ class DataHandler():
                             target_record[i].add_one_month()
                         break
                     elif record.address == target_record[i].address:
-                        #TODO: address가 같은데, applicant가 다른 경우. 이런 경우는 이직을 한 경우. 따라서 record에 추가해서 올려야함. 그런데? 지금 record는 리스트 형태가 아님.
+                        # TODO: address가 같은데, applicant가 다른 경우. 이런 경우는 이직을 한 경우. 따라서 record에 추가해서 올려야함. 그런데? 지금 record는 리스트 형태가 아님.
 
                         if target_record[i].start > record.start:
                             target_record[i].start = record.start
