@@ -14,7 +14,6 @@ model = "gpt-3.5-turbo"
 openai_api_key = config['KEY']['openai_api_key']
 client= OpenAI(api_key=openai_api_key)
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = "ls__4aba590bc7184265b424dceb302ece55"
 
 def return_samename(names , total_name):
     system_prompt = """
