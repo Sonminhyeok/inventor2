@@ -12,9 +12,6 @@ from common.static.global_variable import GlobalVariable as gv
 datamanager = DataManager()
 
 class Record():
-
-
-
     # class Record:
     #     def __init__(self, name, applicant, address, date):
     #         self.name = name
